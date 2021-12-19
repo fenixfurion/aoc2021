@@ -2,6 +2,7 @@ use std::fs::File;
 use std::path::Path;
 use std::io::{self, BufRead};
 use std::collections::{HashMap, HashSet};
+use std::env;
 
 #[derive(Clone)]
 struct Passage {
@@ -143,8 +144,10 @@ fn day12_part2(data: Passage) -> i32 {
     return num_paths as i32;
 }
 
+#[test]
 fn main() {
     println!("AOC2021 Day 12: traverse the world");
+    println!("{:?}", env::current_dir());
 
     let mut data = read_cave_file("./input_basic.txt");
     let result = day12_part1(data);

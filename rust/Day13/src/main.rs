@@ -103,6 +103,7 @@ fn day13_part2(dots: HashSet<(u32, u32)> ) {
     }
 }
 
+#[test]
 fn main() {
     println!("AOC2021 Day 13: ????");
 
